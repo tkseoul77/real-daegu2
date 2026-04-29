@@ -142,8 +142,8 @@ img{max-width:100%;display:block}
 /* OFFICE */
 .office{padding:68px 5%;background:var(--bg-soft)}
 .office-wrap{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
-.office-photo-main{border-radius:14px;overflow:hidden;box-shadow:0 12px 36px rgba(0,0,0,.1)}
-.office-photo-main img{width:100%;height:100%;object-fit:cover}
+.office-photo-main{border-radius:14px;overflow:hidden;box-shadow:0 12px 36px rgba(0,0,0,.1);aspect-ratio:4/3;background:#111}
+.office-photo-main img,.office-photo-main video{width:100%;height:100%;object-fit:cover;display:block}
 .office-info h2{font-size:clamp(1.35rem,2.8vw,1.85rem);font-weight:900;color:var(--navy);margin-bottom:22px;line-height:1.3;word-break:keep-all}
 .office-info h2 em{color:var(--green);font-style:normal}
 .info-list{list-style:none;margin-bottom:24px}
@@ -422,10 +422,7 @@ footer{background:#06111e;padding:24px 5%;display:flex;align-items:center;justif
   <h2 class="section-title" style="margin-bottom:32px">대구지점에서<br><em style="color:var(--green);font-style:normal">직접 만나보세요</em></h2>
   <div class="office-wrap">
     <div class="office-photo-main">
-      <video src="office.mp4" autoplay muted loop playsinline
-             style="width:100%;height:100%;object-fit:cover;display:block;"
-             poster="https://daegu.smileagain4u.com/img/daegu/office-1.jpg">
-      </video>
+      <video src="office.mp4" autoplay muted loop playsinline type="video/mp4"></video>
     </div>
     <div class="office-info">
       <ul class="info-list">
